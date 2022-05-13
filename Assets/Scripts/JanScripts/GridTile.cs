@@ -37,7 +37,7 @@ public class GridTile : MonoBehaviour
     [ExecuteInEditMode]
     public void ReplaceMe(ETileType newTile)
     {
-        switch (MyTile)
+        switch (newTile)
         {
             case ETileType.NONE:
                 break;
