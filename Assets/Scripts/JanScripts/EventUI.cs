@@ -117,5 +117,6 @@ public enum ESpeaker
     ACTIVIST,
     WOODPERSON,
     ANGRYPERSON,
-    DEATH
+    DEATH,
+    NEWSANCHOR
 }
