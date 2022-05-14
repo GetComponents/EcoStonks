@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 691498304309321543}
   - component: {fileID: 2683956697553606204}
   - component: {fileID: 4263575319518876293}
+  - component: {fileID: 514021500047785839}
   m_Layer: 0
   m_Name: M_Wind_Turbine_03
   m_TagString: Untagged
@@ -81,6 +82,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &514021500047785839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173772860248296117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe8f55dee3e04a4d8049fece3606bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2609769234672568693
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +105,7 @@ GameObject:
   - component: {fileID: 8253967449887740203}
   - component: {fileID: 1887101035947394653}
   - component: {fileID: 5793905623044328308}
+  - component: {fileID: 343948884119799735}
   m_Layer: 0
   m_Name: M_Wind_Turbine_01
   m_TagString: Untagged
@@ -162,6 +176,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &343948884119799735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2609769234672568693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe8f55dee3e04a4d8049fece3606bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4798542214287751244
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +283,7 @@ GameObject:
   - component: {fileID: 2716909080622909788}
   - component: {fileID: 4511049578822056246}
   - component: {fileID: 8243916945299717973}
+  - component: {fileID: 3103278746661497900}
   m_Layer: 0
   m_Name: M_Wind_Turbine_02
   m_TagString: Untagged
@@ -327,3 +354,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3103278746661497900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7714762826842736002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe8f55dee3e04a4d8049fece3606bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

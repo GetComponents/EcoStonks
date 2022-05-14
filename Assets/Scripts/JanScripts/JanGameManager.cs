@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 [DisallowMultipleComponent]
 public class JanGameManager : MonoBehaviour
@@ -13,6 +14,10 @@ public class JanGameManager : MonoBehaviour
         set
         {
             m_currency = value;
+            if (value < 0)
+            {
+                m_currency = 0;
+            }
             OnCurrencyChanged?.Invoke();
         }
     }
@@ -32,6 +37,14 @@ public class JanGameManager : MonoBehaviour
         {
             m_emission = value;
             OnEmissionChanged?.Invoke();
+            if (value <= 0)
+            {
+                m_emission = 0;
+            }
+            if (value >= 100)
+            {
+                SceneManager.LoadScene("EndScreen");
+            }
         }
     }
 
@@ -40,7 +53,7 @@ public class JanGameManager : MonoBehaviour
     public float EmmissionPerSecond;
 
 
-    public const float SECONDSPERMONTH = 1;
+    public const float SECONDSPERMONTH = 5;
     public float EmissionPerSecond;
     public float BuildingMoneyPerMonth;
     public float PassiveMoneyPerMonth;
@@ -67,6 +80,10 @@ public class JanGameManager : MonoBehaviour
         get => m_woodCount;
         set
         {
+            if (m_woodCount < value)
+            {
+                PlayerStats.Instance.TreesPlanted++;
+            }
             if (value == 0)
             {
                 foreach (EventCards card in WoodEvents)
@@ -262,6 +279,7 @@ public class JanGameManager : MonoBehaviour
             Currency += BuildingMoneyPerMonth;
             Currency += PassiveMoneyPerMonth;
             monthCounter++;
+            PlayerStats.Instance.MonthsPassed++;
             if (monthCounter == 3 || monthCounter == 6)
             {
                 ReadCard();
@@ -285,7 +303,7 @@ public class JanGameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("You Lost");
+            SceneManager.LoadScene("EndScreen");
         }
     }
 
