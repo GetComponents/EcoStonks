@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.37312025, g: 0.38074112, b: 0.3587276, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,7 +131,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5631502988604902097, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
-      propertyPath: m_timeOfDay
+      propertyPath: m_adjustDayLength
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
@@ -152,27 +152,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.45451945
+      value: 0.087155804
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.45451945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.54167527
+      value: 0.9961947
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.54167527
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 89.97
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5631502988604902098, guid: 3ed7d0b5bfc1b11468e8bbb41135d6d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -191,26 +191,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669700452}
     m_Modifications:
-    - target: {fileID: 4839035102948812764, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812764, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812764, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812764, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812764, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -246,18 +226,6 @@ PrefabInstance:
     - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
       propertyPath: m_SizeDelta.y
       value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4839035102948812766, guid: 7cc10bf9993ccee458654f965bcf4106, type: 3}
       propertyPath: m_LocalPosition.x
@@ -497,8 +465,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278245375
+  m_fontColor: {r: 1, g: 0.84313726, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -795,7 +763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lightingCircle: {fileID: 2083705958}
-  m_showSeconds: 1
   m_timeOfDayText: {fileID: 740318605}
   m_currency: 0
   m_energy: 0

@@ -59,7 +59,7 @@ public class LightingCircle : MonoBehaviour
         if (m_directionalLight != null)
         {
             m_directionalLight.color = m_lightingConditions.m_directionColor.Evaluate (_timePercent);
-            m_directionalLight.transform.localRotation = Quaternion.Euler (new Vector3 (_timePercent * 360, -90f, 170f));
+            m_directionalLight.transform.localRotation = Quaternion.Euler (new Vector3 ((_timePercent * 360f) -90f, 170f, 0f));
         }
     }
 }

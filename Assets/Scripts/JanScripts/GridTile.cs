@@ -45,6 +45,7 @@ public class GridTile : MonoBehaviour
                 break;
             case ETileType.WOODS:
                 MyEmmision = info.WoodEmmesion;
+                JanGameManager.Instance.WoodCount++;
                 myMesh.material.color = Color.green;
                 break;
             case ETileType.EMPTY:
@@ -60,49 +61,75 @@ public class GridTile : MonoBehaviour
                 MyEmmision = info.CoalEmminsion;
                 MyEnergy = info.CoalEnergyGain;
                 MyMoneyGain = info.CoalMoneyGain;
+                JanGameManager.Instance.CoalCount++;
                 myMesh.material.color = Color.black;
                 break;
             case ETileType.GASPP:
                 MyEmmision = info.GasEmmision;
                 MyEnergy = info.GasEnergyGain;
                 MyMoneyGain = info.GasMoneyGain;
+                JanGameManager.Instance.GasCount++;
                 myMesh.material.color = Color.yellow;
                 break;
             case ETileType.WINDPP:
                 MyEnergy = info.WindEnergyGain;
                 MyMoneyGain = info.WindMoneyGain;
+                JanGameManager.Instance.WindCount++;
                 myMesh.material.color = Color.cyan;
                 break;
             case ETileType.SOLARPP:
                 MyEnergy = info.SolarEnergyGain;
                 MyMoneyGain = info.SolarMoneyGain;
+                JanGameManager.Instance.SolarCount++;
                 myMesh.material.color = Color.magenta;
                 break;
             case ETileType.WATERPP:
                 MyEnergy = info.WaterEnergyGain;
                 MyMoneyGain = info.WaterMoneyGain;
+                JanGameManager.Instance.WaterCount++;
                 myMesh.material.color = Color.gray;
                 break;
             case ETileType.ATOMPP:
                 MyEnergy = info.AtomEnergyGain;
                 MyMoneyGain = info.AtomMoneyGain;
+                JanGameManager.Instance.AtomCount++;
                 myMesh.material.color = Color.red;
                 break;
             default:
                 break;
         }
-        JanGameManager.Instance.MoneyPerMonth += MyMoneyGain;
+        JanGameManager.Instance.BuildingMoneyPerMonth += MyMoneyGain;
         JanGameManager.Instance.Energy += MyEnergy;
         JanGameManager.Instance.EmissionPerSecond += MyEmmision;
     }
 
     public void RemoveOldTile()
     {
-        //JanGameManager.Instance.EmissionPerSecond -= MyEmmision;
-        //JanGameManager.Instance.MoneyPerMonth -= MyMoneyGain;
-        //JanGameManager.Instance.Energy -= MyEnergy;
-        //MyMoneyGain = 0;
-        //MyEmmision = 0;
-        //MyEnergy = 0;
+        switch (MyTile)
+        {
+            case ETileType.WOODS:
+                JanGameManager.Instance.WoodCount--;
+                break;
+            case ETileType.COALPP:
+                JanGameManager.Instance.CoalCount--;
+                break;
+            case ETileType.GASPP:
+                JanGameManager.Instance.GasCount--;
+                break;
+            case ETileType.WINDPP:
+                JanGameManager.Instance.WindCount--;
+                break;
+            case ETileType.SOLARPP:
+                JanGameManager.Instance.SolarCount--;
+                break;
+            case ETileType.WATERPP:
+                JanGameManager.Instance.WaterCount--;
+                break;
+            case ETileType.ATOMPP:
+                JanGameManager.Instance.AtomCount--;
+                break;
+            default:
+                break;
+        }
     }
 }
