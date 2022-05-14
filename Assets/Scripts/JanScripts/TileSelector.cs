@@ -10,6 +10,7 @@ public class TileSelector : MonoBehaviour
     GridTile selectedTile;
     public bool SelectingTile;
     public ETileType HeldItem;
+    float DropPrice;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class TileSelector : MonoBehaviour
                 SelectingTile = false;
                 SelectedHighlighter.transform.position = new Vector3(200, SelectedHighlighter.transform.position.y, 200);
                 selectedTile.MyTile = HeldItem;
+                JanGameManager.Instance.Currency -= DropPrice;
             }
         }
     }
@@ -47,22 +49,56 @@ public class TileSelector : MonoBehaviour
         switch (HeldItem)
         {
             case ETileType.WOODS:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.WoodPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.WoodPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.COALPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.CoalPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.CoalPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.GASPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.GasPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.GasPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.WINDPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.WindPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.WindPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.SOLARPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.SolarPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.SolarPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.WATERPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.WaterPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.WaterPrice;
+                    SelectingTile = true;
+                }
                 break;
             case ETileType.ATOMPP:
+                if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.AtomPrice)
+                {
+                    DropPrice = BuildingInfo.Instance.WaterPrice;
+                    SelectingTile = true;
+                }
                 break;
             default:
                 break;
         }
-        SelectingTile = true;
     }
 }
