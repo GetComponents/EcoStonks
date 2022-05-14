@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private LightingCircle m_lightingCircle;
 
-    [SerializeField] private bool m_showSeconds = false;
-
     [SerializeField] TextMeshProUGUI m_timeOfDayText;
     private float m_gameStarttime = 0f;
 
@@ -63,11 +61,11 @@ public class GameManager : MonoBehaviour
 
     private void DisplayTimeOfDay(float _timeOfDay)
     {
-        //Stunden des Tages.
-        float hours = Mathf.FloorToInt(_timeOfDay);
+        //Stunden des Tages. (int)-cast ersetzte 'Mathf.FloorToInt(_timeOfDay);'
+        float hours = (int)_timeOfDay;
         //Berechnung der Minuten.
-        float minutes = Mathf.FloorToInt(_timeOfDay / 60);
-        
+        float minutes = (_timeOfDay - (int)_timeOfDay) * 60f;
+
         m_timeOfDayText.text = string.Format("Daytime {0:00}:{1:00}", hours, minutes);        
     }
 }
