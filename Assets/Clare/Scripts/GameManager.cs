@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LightingCircle m_lightingCircle;
 
     [SerializeField] TextMeshProUGUI m_timeOfDayText;
-    private float m_gameStarttime = 0f;
 
     private UnityEvent onCurrencyChanged;
     private UnityEvent onEnergyChanged;
@@ -38,8 +37,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        m_gameStarttime = Time.time;
-
         if (Instance is null)
             Instance = this;
         else
@@ -51,11 +48,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log($"Time of Day: {m_lightingCircle.GetComponent<LightingCircle>().TimeOfDay}.");
-        if(m_lightingCircle.GetComponent<LightingCircle>().TimeOfDay == 0f)
-            m_gameStarttime = Time.time;
-
-        //m_songtimeLeftCountUp = Time.time - m_gameStarttime;
         DisplayTimeOfDay(m_lightingCircle.GetComponent<LightingCircle>().TimeOfDay);
     }
 
@@ -63,7 +55,7 @@ public class GameManager : MonoBehaviour
     {
         //Stunden des Tages. (int)-cast ersetzte 'Mathf.FloorToInt(_timeOfDay);'
         float hours = (int)_timeOfDay;
-        //Berechnung der Minuten.
+        //Minuten.
         float minutes = (_timeOfDay - (int)_timeOfDay) * 60f;
 
         m_timeOfDayText.text = string.Format("Daytime {0:00}:{1:00}", hours, minutes);        
