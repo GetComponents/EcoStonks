@@ -15,6 +15,7 @@ public class EventCards : ScriptableObject
     public float MoneyIncrease;
     public float PassiveMoneyIncrease;
     public int NeededEnergy;
+    public int EnergyIncrease;
     public ETileType BuildTile;
     public ETileType DestroyTile;
     public ECardCondition CardCondition;
@@ -24,6 +25,7 @@ public class EventCards : ScriptableObject
     public float MoneyIncrease2;
     public float PassiveMoneyIncrease2;
     public int NeededEnergy2;
+    public int EnergyIncrease2;
     public ETileType BuildTile2;
     public ETileType DestroyTile2;
     public ECardCondition CardCondition2;
@@ -44,6 +46,7 @@ public class EventCards : ScriptableObject
             JanGameManager.Instance.TotalEmission += EmissionIncrease;
             JanGameManager.Instance.PassiveMoneyPerMonth += PassiveMoneyIncrease;
             JanGameManager.Instance.EnergyGoal += NeededEnergy;
+            JanGameManager.Instance.Energy += EnergyIncrease;
 
             if (BuildTile != ETileType.NONE)
             {
@@ -102,6 +105,7 @@ public class EventCards : ScriptableObject
             JanGameManager.Instance.TotalEmission += EmissionIncrease2;
             JanGameManager.Instance.PassiveMoneyPerMonth += PassiveMoneyIncrease2;
             JanGameManager.Instance.EnergyGoal += NeededEnergy2;
+            JanGameManager.Instance.Energy += EnergyIncrease2;
 
             if (BuildTile2 != ETileType.NONE)
             {
