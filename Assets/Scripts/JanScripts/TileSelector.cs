@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TileSelector : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class TileSelector : MonoBehaviour
     public bool SelectingTile;
     public ETileType HeldItem;
     float DropPrice;
+
+    public UnityEvent OnBuildingPlaced;
 
     void Start()
     {
@@ -51,8 +54,17 @@ public class TileSelector : MonoBehaviour
             case ETileType.WOODS:
                 if (JanGameManager.Instance.Currency >= BuildingInfo.Instance.WoodPrice)
                 {
-                    DropPrice = BuildingInfo.Instance.WoodPrice;
-                    SelectingTile = true;
+                    foreach (GridTile tile in FindObjectsOfType<GridTile>())
+                    {
+                        if (tile.MyTile == ETileType.EMPTY)
+                        {
+                            tile.MyTile = ETileType.WOODS;
+                            JanGameManager.Instance.Currency -= BuildingInfo.Instance.WoodPrice;
+                            break;
+                        }
+                    }
+                    //DropPrice = BuildingInfo.Instance.WoodPrice;
+                    //SelectingTile = true;
                 }
                 break;
             case ETileType.COALPP:
