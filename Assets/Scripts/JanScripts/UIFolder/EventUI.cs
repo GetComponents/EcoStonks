@@ -10,12 +10,13 @@ public class EventUI : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI myTextBubble;
     [SerializeField]
-    GameObject ChoiceButtons, OkButtons, SpeechBubble, InfoBubble, CharacterSprite;
+    GameObject ChoiceButtons, OkButtons, SpeechBubble, InfoBubble, CharacterSprite, OkButton2;
 
     public bool ContainsChoice;
     public string MyText;
     public ESpeaker Speaker;
     public EventCards CurrentEvent;
+    private bool currentlyVotedYes;
 
     [SerializeField]
     Sprite MayorSprite, AdmiralSprite, BuilderSprite, KarenSprite, RangerSprite, ReporterSprite, DeathSprite, ActivistSprite;
@@ -59,11 +60,36 @@ public class EventUI : MonoBehaviour
 
     public void TriggerEvent(bool _votedYes)
     {
+        currentlyVotedYes = _votedYes;
+        if (_votedYes && CurrentEvent.ConditionAnswer != "")
+        {
+            SpawnFollowUpBox(CurrentEvent.ConditionAnswer);
+        }
+        else if (!_votedYes && CurrentEvent.ConditionAnswer2 != "")
+        {
+            SpawnFollowUpBox(CurrentEvent.ConditionAnswer2);
+        }
+        else
+        {
+            FinishEvent();
+        }
+    }
+
+    public void SpawnFollowUpBox(string text)
+    {
+        myTextBubble.text = text;
+        ChoiceButtons.SetActive(false);
+        OkButton2.SetActive(true);
+    }
+
+    public void FinishEvent()
+    {
         Time.timeScale = 1;
-        CurrentEvent.TriggerEffect(_votedYes);
+        CurrentEvent.TriggerEffect(currentlyVotedYes);
         myTextBubble.text = "";
         ChoiceButtons.SetActive(false);
         OkButtons.SetActive(false);
+        OkButton2.SetActive(false);
         SpeechBubble.SetActive(false);
         InfoBubble.SetActive(false);
         CharacterSprite.SetActive(false);

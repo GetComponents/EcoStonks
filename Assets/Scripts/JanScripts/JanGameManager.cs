@@ -53,7 +53,7 @@ public class JanGameManager : MonoBehaviour
     public float EmmissionPerSecond;
 
 
-    public const float SECONDSPERMONTH = 5;
+    public const float SECONDSPERMONTH = 1;
     public float EmissionPerSecond;
     public float BuildingMoneyPerMonth;
     public float PassiveMoneyPerMonth;
@@ -280,15 +280,15 @@ public class JanGameManager : MonoBehaviour
             Currency += PassiveMoneyPerMonth;
             monthCounter++;
             PlayerStats.Instance.MonthsPassed++;
-            if (monthCounter == 3 || monthCounter == 6)
-            {
-                ReadCard();
-            }
             if (monthCounter == 6)
             {
                 cycleCounter++;
                 CheckEnergyGoal();
                 monthCounter = 0;
+            }
+            if (monthCounter == 3 || monthCounter == 6)
+            {
+                ReadCard();
             }
         }
     }

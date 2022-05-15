@@ -112,6 +112,13 @@ MonoBehaviour:
   myMesh: {fileID: 318937249782667479}
   m_myTile: 2
   MyPosition: {x: 0, y: 0, z: 0}
+  CoalPrefab: {fileID: 548082961112466442, guid: 28c36bca2ac6be04ba543270f2539bdc, type: 3}
+  GasPrefab: {fileID: 5582519887690969910, guid: cc559326f0ca217488ddef573e2d0b34, type: 3}
+  SolarPrefab: {fileID: 8184302722376157735, guid: 9a33aed58c240fa4f9521b54b755e144, type: 3}
+  WindPrefab: {fileID: 3880147313029418824, guid: d504bd310b65fa843afa3b32edb8f80e, type: 3}
+  WaterPrefab: {fileID: 715933692260940997, guid: bfe56f2341524644798a2d86f75cc478, type: 3}
+  AtomPrefab: {fileID: 8057434813246233408, guid: ffc2d99cf1fa91049aa0dd433518db49, type: 3}
+  WoodPrefab: {fileID: 1999574721326659968, guid: f15f5ede13c7fc24a9dc4a6ada820dd3, type: 3}
   MyMoneyGain: 0
   MyEmmision: 0
   MyEnergy: 0

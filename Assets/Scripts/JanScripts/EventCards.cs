@@ -18,6 +18,7 @@ public class EventCards : ScriptableObject
     public ETileType BuildTile;
     public ETileType DestroyTile;
     public ECardCondition CardCondition;
+    public string ConditionAnswer;
 
     [Space]
     public float EmissionIncrease2;
@@ -27,6 +28,7 @@ public class EventCards : ScriptableObject
     public ETileType BuildTile2;
     public ETileType DestroyTile2;
     public ECardCondition CardCondition2;
+    public string ConditionAnswer2;
 
     [Space]
     public int MonthAmountCondition;

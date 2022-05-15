@@ -20,6 +20,10 @@ public class GridTile : MonoBehaviour
     [SerializeField]
     private ETileType m_myTile;
     public Vector3 MyPosition;
+    GameObject currentPlacedObject;
+
+    [SerializeField]
+    private GameObject CoalPrefab, GasPrefab, SolarPrefab, WindPrefab, WaterPrefab, AtomPrefab, WoodPrefab;
 
     private void Start()
     {
@@ -46,7 +50,8 @@ public class GridTile : MonoBehaviour
             case ETileType.WOODS:
                 MyEmmision = info.WoodEmmesion;
                 JanGameManager.Instance.WoodCount++;
-                myMesh.material.color = Color.green;
+                currentPlacedObject = Instantiate(WoodPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.green;
                 break;
             case ETileType.EMPTY:
                 myMesh.material.color = Color.white;
@@ -62,38 +67,44 @@ public class GridTile : MonoBehaviour
                 MyEnergy = info.CoalEnergyGain;
                 MyMoneyGain = info.CoalMoneyGain;
                 JanGameManager.Instance.CoalCount++;
-                myMesh.material.color = Color.black;
+                currentPlacedObject = Instantiate(CoalPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.black;
                 break;
             case ETileType.GASPP:
                 MyEmmision = info.GasEmmision;
                 MyEnergy = info.GasEnergyGain;
                 MyMoneyGain = info.GasMoneyGain;
                 JanGameManager.Instance.GasCount++;
-                myMesh.material.color = Color.yellow;
+                currentPlacedObject = Instantiate(GasPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.yellow;
                 break;
             case ETileType.WINDPP:
                 MyEnergy = info.WindEnergyGain;
                 MyMoneyGain = info.WindMoneyGain;
                 JanGameManager.Instance.WindCount++;
-                myMesh.material.color = Color.cyan;
+                //myMesh.material.color = Color.cyan;
+                currentPlacedObject = Instantiate(WindPrefab, transform.position, Quaternion.identity);
                 break;
             case ETileType.SOLARPP:
                 MyEnergy = info.SolarEnergyGain;
                 MyMoneyGain = info.SolarMoneyGain;
                 JanGameManager.Instance.SolarCount++;
-                myMesh.material.color = Color.magenta;
+                currentPlacedObject = Instantiate(SolarPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.magenta;
                 break;
             case ETileType.WATERPP:
                 MyEnergy = info.WaterEnergyGain;
                 MyMoneyGain = info.WaterMoneyGain;
                 JanGameManager.Instance.WaterCount++;
-                myMesh.material.color = Color.gray;
+                currentPlacedObject = Instantiate(WaterPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.gray;
                 break;
             case ETileType.ATOMPP:
                 MyEnergy = info.AtomEnergyGain;
                 MyMoneyGain = info.AtomMoneyGain;
                 JanGameManager.Instance.AtomCount++;
-                myMesh.material.color = Color.red;
+                currentPlacedObject = Instantiate(AtomPrefab, transform.position, Quaternion.identity);
+                //myMesh.material.color = Color.red;
                 break;
             default:
                 break;
@@ -111,6 +122,7 @@ public class GridTile : MonoBehaviour
                 JanGameManager.Instance.WoodCount--;
                 break;
             case ETileType.COALPP:
+                Destroy(currentPlacedObject);
                 JanGameManager.Instance.CoalCount--;
                 break;
             case ETileType.GASPP:
