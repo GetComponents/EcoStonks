@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 12
   m_EditorClassIdentifier: 
-  MyText: Your city is imports a lot of its goods. Do you want to promote regional
-    produce?
+  MyText: Your city imports a lot of its goods. Do you want to promote regional produce?
   ContainsChoice: 1
   Repeatable: 0
   SpeakingCharacter: 1
-  EmissionIncrease: -1
+  EmissionIncrease: -5
   MoneyIncrease: 0
-  PassiveMoneyIncrease: -1
+  PassiveMoneyIncrease: -50
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0

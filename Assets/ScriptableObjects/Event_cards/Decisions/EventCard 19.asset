@@ -18,7 +18,7 @@ MonoBehaviour:
   Repeatable: 0
   SpeakingCharacter: 2
   EmissionIncrease: 0
-  MoneyIncrease: -1
+  MoneyIncrease: -200
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0

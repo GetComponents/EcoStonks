@@ -16,11 +16,11 @@ MonoBehaviour:
   ContainsChoice: 1
   Repeatable: 0
   SpeakingCharacter: 3
-  EmissionIncrease: -1
-  MoneyIncrease: -1
+  EmissionIncrease: -5
+  MoneyIncrease: -300
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
-  EnergyIncrease: -1
+  EnergyIncrease: -5
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0

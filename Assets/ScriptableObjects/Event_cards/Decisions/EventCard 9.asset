@@ -17,9 +17,9 @@ MonoBehaviour:
   ContainsChoice: 1
   Repeatable: 0
   SpeakingCharacter: 1
-  EmissionIncrease: -1
+  EmissionIncrease: -5
   MoneyIncrease: 0
-  PassiveMoneyIncrease: -1
+  PassiveMoneyIncrease: -75
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0

@@ -17,9 +17,9 @@ MonoBehaviour:
   ContainsChoice: 1
   Repeatable: 0
   SpeakingCharacter: 7
-  EmissionIncrease: -1
+  EmissionIncrease: -5
   MoneyIncrease: 0
-  PassiveMoneyIncrease: -1
+  PassiveMoneyIncrease: -50
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   ConditionAnswer: People staying home might not be good for the economy, but most
     definitively helps the environment.
   EmissionIncrease2: 0
-  MoneyIncrease2: -1
+  MoneyIncrease2: -50
   PassiveMoneyIncrease2: 0
   NeededEnergy2: 0
   EnergyIncrease2: 0

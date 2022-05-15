@@ -26,9 +26,9 @@ MonoBehaviour:
   CardCondition: 0
   ConditionAnswer: The people are thankful for the food.
   EmissionIncrease2: 0
-  MoneyIncrease2: -1
-  PassiveMoneyIncrease2: -1
-  NeededEnergy2: -1
+  MoneyIncrease2: -100
+  PassiveMoneyIncrease2: -25
+  NeededEnergy2: -10
   EnergyIncrease2: 0
   BuildTile2: 0
   DestroyTile2: 0

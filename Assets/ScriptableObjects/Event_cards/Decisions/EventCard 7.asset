@@ -19,8 +19,8 @@ MonoBehaviour:
   SpeakingCharacter: 1
   EmissionIncrease: 0
   MoneyIncrease: 0
-  PassiveMoneyIncrease: 1
-  NeededEnergy: 1
+  PassiveMoneyIncrease: 75
+  NeededEnergy: 15
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0

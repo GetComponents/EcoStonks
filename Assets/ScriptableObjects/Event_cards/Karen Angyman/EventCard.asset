@@ -20,10 +20,11 @@ MonoBehaviour:
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
-  EnergyIncrease: -1
+  EnergyIncrease: -10
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: 
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

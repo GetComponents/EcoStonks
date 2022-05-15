@@ -18,10 +18,10 @@ MonoBehaviour:
   Repeatable: 0
   SpeakingCharacter: 3
   EmissionIncrease: 0
-  MoneyIncrease: -1
+  MoneyIncrease: -200
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
-  EnergyIncrease: 1
+  EnergyIncrease: 5
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
