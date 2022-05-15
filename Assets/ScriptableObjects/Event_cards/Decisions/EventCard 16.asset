@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 16
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Activists are signing a petition to bulldoze a local powerplant and reforest
+    the area. Do you take this petition to heart?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 4
   EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
-  BuildTile: 0
-  DestroyTile: 0
+  BuildTile: 1
+  DestroyTile: 6
   CardCondition: 0
+  ConditionAnswer: Petitions are an important outlet for our citizens and should
+    be listened to.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +35,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: Who cares about petitions anyways?
   MonthAmountCondition: 0

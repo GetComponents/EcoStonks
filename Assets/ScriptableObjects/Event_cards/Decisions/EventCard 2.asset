@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 2
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Activists are protesting to expand public transport and make it more affordable.
+    Will you support their cause?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
-  EmissionIncrease: 0
-  MoneyIncrease: 0
+  SpeakingCharacter: 4
+  EmissionIncrease: -1
+  MoneyIncrease: -1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: New buses, trains and shared vehicles are on their way!
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +34,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

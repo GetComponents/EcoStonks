@@ -12,24 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 8
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: A discussion has broken out in the council. They are unsure if they should
+    reforest areas or rent them out. They ask for your guidance. Should those areas
+    be reforested?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 5
   EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
-  DestroyTile: 0
+  DestroyTile: 1
   CardCondition: 0
+  ConditionAnswer: Reforesting seems like a good idea to you.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
-  PassiveMoneyIncrease2: 0
+  PassiveMoneyIncrease2: 1
   NeededEnergy2: 0
   EnergyIncrease2: 0
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: Renting out the place seems like a better idea to you.
   MonthAmountCondition: 0
