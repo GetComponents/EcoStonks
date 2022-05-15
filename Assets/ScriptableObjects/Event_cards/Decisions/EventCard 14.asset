@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 14
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: A claim is being made against. Do you bribe the accuser?
+  ContainsChoice: 1
   Repeatable: 0
   SpeakingCharacter: 0
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: -1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: You bribe the accuser allthough you are pretty sure his claim
+    was unfounded.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +34,6 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: It turns out to have been a hoax. Good thing you didn't bribe
+    the guy.
   MonthAmountCondition: 0

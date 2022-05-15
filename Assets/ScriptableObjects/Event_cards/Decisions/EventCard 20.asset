@@ -12,24 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 20
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: An atom power plant is being attacked by terrorists. Do we send the army?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 2
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: -1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: The terrorists are arrested. You and the city can feel save again.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
   NeededEnergy2: 0
   EnergyIncrease2: 0
   BuildTile2: 0
-  DestroyTile2: 0
+  DestroyTile2: 10
   CardCondition2: 0
+  ConditionAnswer2: The atomic power plant isn't functional anymore and also some
+    of the uranium is missing. Yikes.
   MonthAmountCondition: 0

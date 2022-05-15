@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 10
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: There are quite a few old buildings and institutions that could use a renovation
+    in form of better insulation. Do you spend city funds on that?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 3
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: -1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
-  EnergyIncrease: 0
+  EnergyIncrease: 1
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: The buildings really needed this renovation. It may have cost
+    a wealthy sum, but at least the isolation is great now.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +35,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

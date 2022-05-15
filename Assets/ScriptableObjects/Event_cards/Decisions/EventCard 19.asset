@@ -12,24 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 19
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Bandits hijack a hydro powerplant. Do you mobilize the local army forces
+    to deal with the problem?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 2
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: -1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: Good choice. The bandits are dealt with and placed into custody.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
   NeededEnergy2: 0
   EnergyIncrease2: 0
   BuildTile2: 0
-  DestroyTile2: 0
+  DestroyTile2: 9
   CardCondition2: 0
+  ConditionAnswer2: The bandits caused irreperable damage to the powerplant. If only
+    you had manned up before.
   MonthAmountCondition: 0

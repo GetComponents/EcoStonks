@@ -12,18 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 6
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Woodprices are high. Shall we cut down some trees and sell their wood?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 5
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: 1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
-  DestroyTile: 0
+  DestroyTile: 1
   CardCondition: 0
+  ConditionAnswer: Selling wood for that dough, that's the way to go.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +33,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

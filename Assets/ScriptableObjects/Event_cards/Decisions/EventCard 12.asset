@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 12
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Your city is imports a lot of its goods. Do you want to promote regional
+    produce?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
-  EmissionIncrease: 0
+  SpeakingCharacter: 1
+  EmissionIncrease: -1
   MoneyIncrease: 0
-  PassiveMoneyIncrease: 0
+  PassiveMoneyIncrease: -1
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: Promoting your local products and produce makes your local producers
+    very happy. They even gave you a fruitbasket to show you their gratitude.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +35,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

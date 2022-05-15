@@ -14,4 +14,9 @@ public class UIButtons : MonoBehaviour
     {
         SceneManager.LoadScene("GameArtScene");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
