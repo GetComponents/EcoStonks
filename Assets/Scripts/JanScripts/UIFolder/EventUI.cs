@@ -135,6 +135,9 @@ public class EventUI : MonoBehaviour
             case ESpeaker.DEATH:
                 CharacterSprite.GetComponent<Image>().sprite = DeathSprite;
                 break;
+            case ESpeaker.NEWSANCHOR:
+                CharacterSprite.GetComponent<Image>().sprite = ReporterSprite;
+                break;
             default:
                 break;
         }

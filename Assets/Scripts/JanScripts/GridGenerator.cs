@@ -10,6 +10,7 @@ public class GridGenerator : MonoBehaviour
     [SerializeField]
     Vector2 GridBoundries;
 
+
     [ContextMenu("Generate Grid")]
     void GenerateMap()
     {

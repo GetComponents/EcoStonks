@@ -75,6 +75,9 @@ public class JanGameManager : MonoBehaviour
     public EventCardHolder eventCards;
 
     public List<EventCards> WoodEvents, CoalEvents, GasEvents, SolarEvents, WindEvents, WaterEvents, AtomEvents;
+
+    public GameObject PrefabParent;
+
     public int WoodCount
     {
         get => m_woodCount;
