@@ -270,7 +270,19 @@ public class JanGameManager : MonoBehaviour
     private void Start()
     {
         eventCards = GetComponent<EventCardHolder>();
+        SpawnAllContent();
         StartCoroutine(MonthCycle());
+    }
+
+    private void SpawnAllContent()
+    {
+
+        foreach (GridTile tile in FindObjectsOfType<GridTile>())
+        {
+
+            tile.MyTile = tile.MyTile;
+        }
+        EmissionPerSecond = 0;
     }
 
     IEnumerator MonthCycle()
