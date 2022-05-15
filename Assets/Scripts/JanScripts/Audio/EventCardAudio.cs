@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class EventCardAudio : MonoBehaviour
 {
-    //[SerializeField]
-    //AudioSource 
+    [SerializeField]
+    AudioSource jingle;
+
+    [SerializeField]
+    List<AudioSource> paper;
     public static EventCardAudio Instance;
     private void Awake()
     {
@@ -22,6 +25,11 @@ public class EventCardAudio : MonoBehaviour
 
     public void PlayPaperSFX()
     {
+        paper[Random.Range(0, paper.Count)].Play();
+    }
 
+    public void PlayJingleSFX()
+    {
+        jingle.Play();
     }
 }

@@ -51,10 +51,12 @@ public class EventUI : MonoBehaviour
         if (_currentEvent.SpeakingCharacter != ESpeaker.NONE)
         {
             SpawnCharacter(_currentEvent.SpeakingCharacter);
+            EventCardAudio.Instance.PlayJingleSFX();
         }
         else
         {
             SpawnInfo();
+            EventCardAudio.Instance.PlayPaperSFX();
         }
     }
 

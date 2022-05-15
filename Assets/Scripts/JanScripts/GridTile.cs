@@ -13,8 +13,8 @@ public class GridTile : MonoBehaviour
         set
         {
             RemoveOldTile();
-            m_myTile = value;
             PlaceNewTile(value);
+            m_myTile = value;
         }
     }
     [SerializeField]
@@ -49,8 +49,12 @@ public class GridTile : MonoBehaviour
                 break;
             case ETileType.WOODS:
                 MyEmmision = info.WoodEmmesion;
-                JanGameManager.Instance.WoodCount++;
+                if (MyTile != ETileType.WOODS)
+                {
+                    JanGameManager.Instance.WoodCount++;
+                    ConstructionAudio.Instance.PlayWoodConstruction();
 
+                }
                 currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 currentPlacedObject.transform.eulerAngles = new Vector3(0, Random.Range(0f, 360f), 0);
@@ -69,7 +73,8 @@ public class GridTile : MonoBehaviour
                 MyEnergy = info.CoalEnergyGain;
                 MyMoneyGain = info.CoalMoneyGain;
                 JanGameManager.Instance.CoalCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(CoalPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             case ETileType.GASPP:
@@ -77,35 +82,40 @@ public class GridTile : MonoBehaviour
                 MyEnergy = info.GasEnergyGain;
                 MyMoneyGain = info.GasMoneyGain;
                 JanGameManager.Instance.GasCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(GasPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             case ETileType.WINDPP:
                 MyEnergy = info.WindEnergyGain;
                 MyMoneyGain = info.WindMoneyGain;
                 JanGameManager.Instance.WindCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(WindPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             case ETileType.SOLARPP:
                 MyEnergy = info.SolarEnergyGain;
                 MyMoneyGain = info.SolarMoneyGain;
                 JanGameManager.Instance.SolarCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(SolarPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             case ETileType.WATERPP:
                 MyEnergy = info.WaterEnergyGain;
                 MyMoneyGain = info.WaterMoneyGain;
                 JanGameManager.Instance.WaterCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(WaterPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             case ETileType.ATOMPP:
                 MyEnergy = info.AtomEnergyGain;
                 MyMoneyGain = info.AtomMoneyGain;
                 JanGameManager.Instance.AtomCount++;
-                currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
+                ConstructionAudio.Instance.PlayPowerPlantConstruction();
+                currentPlacedObject = Instantiate(AtomPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
                 break;
             default:
