@@ -75,6 +75,9 @@ public class JanGameManager : MonoBehaviour
     public EventCardHolder eventCards;
 
     public List<EventCards> WoodEvents, CoalEvents, GasEvents, SolarEvents, WindEvents, WaterEvents, AtomEvents;
+
+    public GameObject PrefabParent;
+
     public int WoodCount
     {
         get => m_woodCount;
@@ -267,7 +270,19 @@ public class JanGameManager : MonoBehaviour
     private void Start()
     {
         eventCards = GetComponent<EventCardHolder>();
+        SpawnAllContent();
         StartCoroutine(MonthCycle());
+    }
+
+    private void SpawnAllContent()
+    {
+
+        foreach (GridTile tile in FindObjectsOfType<GridTile>())
+        {
+
+            tile.MyTile = tile.MyTile;
+        }
+        EmissionPerSecond = 0;
     }
 
     IEnumerator MonthCycle()

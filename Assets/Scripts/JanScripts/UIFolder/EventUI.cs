@@ -51,10 +51,12 @@ public class EventUI : MonoBehaviour
         if (_currentEvent.SpeakingCharacter != ESpeaker.NONE)
         {
             SpawnCharacter(_currentEvent.SpeakingCharacter);
+            EventCardAudio.Instance.PlayJingleSFX();
         }
         else
         {
             SpawnInfo();
+            EventCardAudio.Instance.PlayPaperSFX();
         }
     }
 
@@ -134,6 +136,9 @@ public class EventUI : MonoBehaviour
                 break;
             case ESpeaker.DEATH:
                 CharacterSprite.GetComponent<Image>().sprite = DeathSprite;
+                break;
+            case ESpeaker.NEWSANCHOR:
+                CharacterSprite.GetComponent<Image>().sprite = ReporterSprite;
                 break;
             default:
                 break;
