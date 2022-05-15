@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5885611648231303880}
   - component: {fileID: 6095686176846633760}
   - component: {fileID: 3423954657089787788}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_spruce_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 3600090582799727370}
   - component: {fileID: 6728992106259328269}
   - component: {fileID: 4337962126958963957}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_spruce_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 5966201770593808087}
   - component: {fileID: 5487507681058260449}
   - component: {fileID: 6659952991943741689}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_brich_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 1055782056425093642}
   - component: {fileID: 1823666152009525438}
   - component: {fileID: 4814467163717139610}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_Solar_Power_Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4224959111864432720}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_Solar_Park_Varient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 3738136114126908599}
   - component: {fileID: 8182319265077136968}
   - component: {fileID: 2747958709713573828}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_brich_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

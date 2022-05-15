@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5676153492888205802}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SM_Wind_Park_Varient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3880147313029418824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09730708, y: 0.17719223, z: -2.1574643}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 972996426443975174}
@@ -49,6 +49,10 @@ PrefabInstance:
     - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_Name
       value: SM_spruce_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5739614729945326807, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_RootOrder
@@ -124,6 +128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_spruce_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5739614729945326807, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -197,6 +205,10 @@ PrefabInstance:
     - target: {fileID: 2802343257616048501, guid: 14f56bd29f00a9b419ad8ddd55874463, type: 3}
       propertyPath: m_Name
       value: SM_brich_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2802343257616048501, guid: 14f56bd29f00a9b419ad8ddd55874463, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5886354055025226745, guid: 14f56bd29f00a9b419ad8ddd55874463, type: 3}
       propertyPath: m_RootOrder
@@ -272,6 +284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_brich_02
       objectReference: {fileID: 0}
+    - target: {fileID: 7360807537322381800, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7457556433178085203, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -334,6 +350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_brich_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7360807537322381800, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7457556433178085203, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -395,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_Name
       value: SM_spruce_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5739614729945326807, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_RootOrder
@@ -470,6 +494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_spruce_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4269714198288859754, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5739614729945326807, guid: 1b58b81cb21b9684f9c2c3dc45eecca8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -544,6 +572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_brich_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7360807537322381800, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7457556433178085203, guid: 3dc739332d47b7043bbca907e39f1d08, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -602,9 +634,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5676153492888205802}
     m_Modifications:
+    - target: {fileID: 173772860248296117, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609769234672568693, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4798542214287751244, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
       propertyPath: m_Name
       value: SM_Wind_Park
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798542214287751244, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714762826842736002, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7926088634459763406, guid: 2328eda54512d2a4cbbd76f29b63db12, type: 3}
       propertyPath: m_RootOrder
