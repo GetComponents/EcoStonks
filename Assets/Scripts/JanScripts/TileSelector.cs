@@ -35,10 +35,10 @@ public class TileSelector : MonoBehaviour
                     selectedTile = objectHit.GetComponent<GridTile>();
                     SelectedHighlighter.transform.position = new Vector3(objectHit.position.x, SelectedHighlighter.transform.position.y, objectHit.position.z);
                 }
-                else if (objectHit.transform.gameObject.layer == 5) //UI Layer
-                {
-                    return;
-                }
+                //else if (objectHit.transform.gameObject.layer == 5) //UI Layer
+                //{
+                //    return;
+                //}
             }
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
