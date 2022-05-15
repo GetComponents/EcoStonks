@@ -12,24 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 21
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: There is a hunger crisis. Do you convert a local forest into farmland?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
+  SpeakingCharacter: 7
   EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
-  DestroyTile: 0
+  DestroyTile: 1
   CardCondition: 0
+  ConditionAnswer: The people are thankful for the food.
   EmissionIncrease2: 0
-  MoneyIncrease2: 0
-  PassiveMoneyIncrease2: 0
-  NeededEnergy2: 0
+  MoneyIncrease2: -1
+  PassiveMoneyIncrease2: -1
+  NeededEnergy2: -1
   EnergyIncrease2: 0
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

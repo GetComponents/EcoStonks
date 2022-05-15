@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 9
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: With more and more electric cars on the market you are debating whether
+    or not to put subsudies on electric cars. Do you?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
-  EmissionIncrease: 0
+  SpeakingCharacter: 1
+  EmissionIncrease: -1
   MoneyIncrease: 0
-  PassiveMoneyIncrease: 0
+  PassiveMoneyIncrease: -1
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: Nature will thank you for this. At least it should if it could.
   EmissionIncrease2: 0
   MoneyIncrease2: 0
   PassiveMoneyIncrease2: 0
@@ -32,4 +34,5 @@ MonoBehaviour:
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: 
   MonthAmountCondition: 0

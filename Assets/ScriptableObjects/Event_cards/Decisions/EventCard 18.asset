@@ -12,24 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 18
   m_EditorClassIdentifier: 
-  MyText: 
-  ContainsChoice: 0
+  MyText: Oh no, there is a pandemic. Do you implement a lockdown to stop the spread
+    of germs?
+  ContainsChoice: 1
   Repeatable: 0
-  SpeakingCharacter: 0
-  EmissionIncrease: 0
+  SpeakingCharacter: 7
+  EmissionIncrease: -1
   MoneyIncrease: 0
-  PassiveMoneyIncrease: 0
+  PassiveMoneyIncrease: -1
   NeededEnergy: 0
   EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  ConditionAnswer: People staying home might not be good for the economy, but most
+    definitively helps the environment.
   EmissionIncrease2: 0
-  MoneyIncrease2: 0
+  MoneyIncrease2: -1
   PassiveMoneyIncrease2: 0
   NeededEnergy2: 0
   EnergyIncrease2: 0
   BuildTile2: 0
   DestroyTile2: 0
   CardCondition2: 0
+  ConditionAnswer2: People need to be protected one way or another, thus funds for
+    research and other measures have to be mobilized.
   MonthAmountCondition: 0
