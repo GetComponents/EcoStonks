@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 7
   m_EditorClassIdentifier: 
-  MyText: SUV's are in!
+  MyText: Being run over by an ambulance is very convenient for everyone involved.
   ContainsChoice: 0
   Repeatable: 0
   SpeakingCharacter: 7
-  EmissionIncrease: 1
+  EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0

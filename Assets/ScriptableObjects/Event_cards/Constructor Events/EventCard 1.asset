@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 1
   m_EditorClassIdentifier: 
-  MyText: The village is growing. We need more building material.
+  MyText: The city is growing. We need more building material.
   ContainsChoice: 0
   Repeatable: 0
   SpeakingCharacter: 3
