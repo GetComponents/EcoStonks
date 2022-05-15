@@ -12,6 +12,6 @@ public class UIButtons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("JansTolleSzene");
+        SceneManager.LoadScene("GameArtScene");
     }
 }

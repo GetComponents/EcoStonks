@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JansTolleSzene.unity
     guid: a6eefafdff563974b811acfe94a1e8ba
+  - enabled: 1
+    path: Assets/Scenes/GameArtScene.unity
+    guid: 47c092c46f787c54a8747119870a38ee
   m_configObjects: {}
