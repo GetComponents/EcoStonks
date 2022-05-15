@@ -49,7 +49,7 @@ public class GridTile : MonoBehaviour
                 break;
             case ETileType.WOODS:
                 MyEmmision = info.WoodEmmesion;
-                //JanGameManager.Instance.WoodCount++;
+                JanGameManager.Instance.WoodCount++;
 
                 currentPlacedObject = Instantiate(WoodPrefab, FindObjectOfType<JanGameManager>().PrefabParent.transform);
                 currentPlacedObject.transform.position = transform.position;
@@ -111,39 +111,39 @@ public class GridTile : MonoBehaviour
             default:
                 break;
         }
-        //JanGameManager.Instance.BuildingMoneyPerMonth += MyMoneyGain;
-        //JanGameManager.Instance.Energy += MyEnergy;
-        //JanGameManager.Instance.EmissionPerSecond += MyEmmision;
+        JanGameManager.Instance.BuildingMoneyPerMonth += MyMoneyGain;
+        JanGameManager.Instance.Energy += MyEnergy;
+        JanGameManager.Instance.EmissionPerSecond += MyEmmision;
     }
 
     public void RemoveOldTile()
     {
-        // switch (MyTile)
-        // {
-        //     case ETileType.WOODS:
-        //         JanGameManager.Instance.WoodCount--;
-        //         break;
-        //     case ETileType.COALPP:
-        //         JanGameManager.Instance.CoalCount--;
-        //         break;
-        //     case ETileType.GASPP:
-        //         JanGameManager.Instance.GasCount--;
-        //         break;
-        //     case ETileType.WINDPP:
-        //         JanGameManager.Instance.WindCount--;
-        //         break;
-        //     case ETileType.SOLARPP:
-        //         JanGameManager.Instance.SolarCount--;
-        //         break;
-        //     case ETileType.WATERPP:
-        //         JanGameManager.Instance.WaterCount--;
-        //         break;
-        //     case ETileType.ATOMPP:
-        //         JanGameManager.Instance.AtomCount--;
-        //         break;
-        //     default:
-        //         break;
-        // }
+        switch (MyTile)
+        {
+            case ETileType.WOODS:
+                JanGameManager.Instance.WoodCount--;
+                break;
+            case ETileType.COALPP:
+                JanGameManager.Instance.CoalCount--;
+                break;
+            case ETileType.GASPP:
+                JanGameManager.Instance.GasCount--;
+                break;
+            case ETileType.WINDPP:
+                JanGameManager.Instance.WindCount--;
+                break;
+            case ETileType.SOLARPP:
+                JanGameManager.Instance.SolarCount--;
+                break;
+            case ETileType.WATERPP:
+                JanGameManager.Instance.WaterCount--;
+                break;
+            case ETileType.ATOMPP:
+                JanGameManager.Instance.AtomCount--;
+                break;
+            default:
+                break;
+        }
         if (currentPlacedObject != null)
         {
 
