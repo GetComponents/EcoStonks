@@ -10,16 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
-  m_Name: Event_01
+  m_Name: EventCard
   m_EditorClassIdentifier: 
-  MyText: 
+  MyText: The neighboring town has PS5's to offer.
   ContainsChoice: 0
   Repeatable: 0
+  SpeakingCharacter: 0
   EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
-  NeededEnergy: 0
+  NeededEnergy: -1
+  EnergyIncrease: 0
   BuildTile: 0
   DestroyTile: 0
   CardCondition: 0
+  EmissionIncrease2: 0
+  MoneyIncrease2: 0
+  PassiveMoneyIncrease2: 0
+  NeededEnergy2: 0
+  EnergyIncrease2: 0
+  BuildTile2: 0
+  DestroyTile2: 0
+  CardCondition2: 0
   MonthAmountCondition: 0
