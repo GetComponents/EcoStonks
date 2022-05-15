@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 7
   m_EditorClassIdentifier: 
-  MyText: 
+  MyText: You get a Cookie! Hurray!
   ContainsChoice: 0
   Repeatable: 0
   SpeakingCharacter: 0
   EmissionIncrease: 0
-  MoneyIncrease: 0
+  MoneyIncrease: 1
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
   EnergyIncrease: 0

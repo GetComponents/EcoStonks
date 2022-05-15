@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d42d50daf16b446bb54afc312790a7, type: 3}
   m_Name: EventCard 6
   m_EditorClassIdentifier: 
-  MyText: So long gay bowser.
+  MyText: All the local bakeries ran out of bread. Now they're only serving cake.
   ContainsChoice: 0
   Repeatable: 0
-  SpeakingCharacter: 6
-  EmissionIncrease: 100
+  SpeakingCharacter: 0
+  EmissionIncrease: 0
   MoneyIncrease: 0
   PassiveMoneyIncrease: 0
   NeededEnergy: 0
