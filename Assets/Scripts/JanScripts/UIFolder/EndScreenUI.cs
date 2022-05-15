@@ -14,7 +14,7 @@ public class EndScreenUI : MonoBehaviour
         treesPlantedText.text = $"Trees Planted: {PlayerStats.Instance.TreesPlanted}";
         monthsSurvivedText.text = $"Months Survived: {PlayerStats.Instance.MonthsPassed}";
         moneySpentText.text = $"Months Survived: {PlayerStats.Instance.MoneySpent}";
-        PlayerStats.Instance.Score = PlayerStats.Instance.MoneySpent * PlayerStats.Instance.MonthsPassed * PlayerStats.Instance.TreesPlanted;
+        PlayerStats.Instance.Score = PlayerStats.Instance.MoneySpent + (PlayerStats.Instance.MonthsPassed * PlayerStats.Instance.TreesPlanted);
         scoreText.text = $"Score: {PlayerStats.Instance.Score}";
         if (PlayerStats.Instance.Score > PlayerStats.Instance.HighScore)
         {
