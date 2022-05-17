@@ -30,7 +30,6 @@ public class ConstructionAudio : MonoBehaviour
 
     public void PlayWoodConstruction()
     {
-        Debug.Log("WoodSFX");
         woodAudio[Random.Range(0, woodAudio.Count)].Play();
     }
 }

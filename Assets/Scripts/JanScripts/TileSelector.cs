@@ -50,6 +50,8 @@ public class TileSelector : MonoBehaviour
                         SelectedHighlighter.transform.position = new Vector3(200, SelectedHighlighter.transform.position.y, 200);
                         selectedTile.MyTile = HeldItem;
                         JanGameManager.Instance.Currency -= DropPrice;
+                        PlayerStats.Instance.MoneySpent += DropPrice;
+                        ChangeBuildingPrice(HeldItem);
                     }
                 }
                 else if (selectedTile.MyTile != ETileType.CITY && selectedTile.MyTile != ETileType.WATER)
@@ -59,8 +61,39 @@ public class TileSelector : MonoBehaviour
                     selectedTile.MyTile = HeldItem;
                     JanGameManager.Instance.Currency -= DropPrice;
                     PlayerStats.Instance.MoneySpent += DropPrice;
+                    ChangeBuildingPrice(HeldItem);
                 }
             }
+        }
+    }
+
+    private void ChangeBuildingPrice(ETileType _building)
+    {
+        switch (_building)
+        {
+            case ETileType.WOODS:
+                BuildingInfo.Instance.WoodPrice += 20;
+                break;
+            case ETileType.COALPP:
+                BuildingInfo.Instance.CoalPrice *= 1.3f;
+                break;
+            case ETileType.GASPP:
+                BuildingInfo.Instance.GasPrice *= 1.3f;
+                break;
+            case ETileType.WINDPP:
+                BuildingInfo.Instance.WindPrice *= 1.1f;
+                break;
+            case ETileType.SOLARPP:
+                BuildingInfo.Instance.SolarPrice *= 1.1f;
+                break;
+            case ETileType.WATERPP:
+                BuildingInfo.Instance.WaterPrice *= 1.1f;
+                break;
+            case ETileType.ATOMPP:
+                BuildingInfo.Instance.AtomPrice *= 1.5f;
+                break;
+            default:
+                break;
         }
     }
 
@@ -68,7 +101,6 @@ public class TileSelector : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-
             HeldItem = (ETileType)_itemType;
             switch (HeldItem)
             {
@@ -82,6 +114,7 @@ public class TileSelector : MonoBehaviour
                                 tile.MyTile = ETileType.WOODS;
                                 JanGameManager.Instance.Currency -= BuildingInfo.Instance.WoodPrice;
                                 PlayerStats.Instance.MoneySpent += BuildingInfo.Instance.WoodPrice;
+                                BuildingInfo.Instance.WoodPrice += 20;
                                 break;
                             }
                         }

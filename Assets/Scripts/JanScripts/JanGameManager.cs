@@ -53,7 +53,7 @@ public class JanGameManager : MonoBehaviour
     public float EmmissionPerSecond;
 
 
-    public const float SECONDSPERMONTH = 1;
+    public const float SECONDSPERMONTH = 5;
     public float EmissionPerSecond;
     public float BuildingMoneyPerMonth;
     public float PassiveMoneyPerMonth;
@@ -290,7 +290,6 @@ public class JanGameManager : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(SECONDSPERMONTH);
-            OnMonthChanged?.Invoke();
             Currency += BuildingMoneyPerMonth;
             Currency += PassiveMoneyPerMonth;
             monthCounter++;
@@ -301,6 +300,7 @@ public class JanGameManager : MonoBehaviour
                 CheckEnergyGoal();
                 monthCounter = 0;
             }
+            OnMonthChanged?.Invoke();
             if (monthCounter == 3 || monthCounter == 6)
             {
                 ReadCard();
